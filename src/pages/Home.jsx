@@ -516,11 +516,11 @@ function Home() {
         <Container>
           <Row>
             <Col md={4}>
-              <h5><><i class="bi bi-file-person-fill"></i></>About Us</h5>
+              <h5><><i class="bi bi-file-person-fill me-2"></i></>About Us</h5>
               <p>We bring the latest in digital marketing strategies and insights to keep you ahead of the curve.</p>
             </Col>
             <Col md={4}>
-              <h5><><i class="bi bi-fast-forward-circle-fill"></i></>Quick Links</h5>
+              <h5><><i class="bi bi-fast-forward-circle-fill me-2"></i></>Quick Links</h5>
               <ul className="list-unstyled">
                 <li><Link to="/about" className="text-light"><><i class="bi bi-file-person-fill"></i></>About</Link></li>
                 <li><Link to="/contact" className="text-light"><><i class="bi bi-person-lines-fill"></i></>Contact</Link></li>
@@ -528,7 +528,7 @@ function Home() {
               </ul>
             </Col>
             <Col md={4}>
-              <h5><><i class="bi bi-person-check-fill"></i></>Follow Us</h5>
+              <h5><><i class="bi bi-person-check-fill me-2"></i></>Follow Us</h5>
               <ul className="list-inline">
                 <li className="list-inline-item"><a href="https://facebook.com" className="text-light"><><i class="bi bi-messenger"></i></>Facebook</a></li>
                 <li className="list-inline-item"><a href="https://twitter.com" className="text-light"><><i class="bi bi-twitter"></i></>Twitter</a></li>

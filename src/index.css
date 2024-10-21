@@ -1,0 +1,50 @@
+/* styles.css */
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f8f9fa; /* Light gray background for light mode */
+    color: #000; /* Text color for light mode */
+  }
+  
+  .section-background.light-mode {
+    background-color: #e3f2fd; /* Light blue background for sections in light mode */
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #343a40; /* Dark background for dark mode */
+    color: #f8f9fa; /* Light text color for dark mode */
+  }
+  
+  .section-background.dark-mode {
+    background-color: #495057; /* Darker background for sections in dark mode */
+  }
+/* styles.css */
+
+.theme-toggle-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  body.light-mode .theme-toggle-btn {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+  }
+  
+  body.dark-mode .theme-toggle-btn {
+    background-color: #495057; /* Darker background for dark mode */
+    color: #f8f9fa; /* Light text color for dark mode */
+  }
+  .theme-toggle-btn {
+    font-size: 1rem; /* Adjust the font size */
+    padding: 0.5rem 1rem; /* Adjust padding for size */
+  }
+  .hover-shadow-lg:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  

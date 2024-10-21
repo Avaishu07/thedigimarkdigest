@@ -40,7 +40,7 @@ function Contact() {
     <div>
       {/* Contact Page Header */}
       <div className="bg-dark text-white text-center py-5 animate__animated animate__fadeIn">
-        <h1><><i className="bi bi-person-lines-fill"></i></>Contact Us</h1>
+        <h1>Contact Us</h1>
         <p>We would love to hear from you! Reach out to us with any questions or feedback.</p>
       </div>
 
@@ -49,7 +49,7 @@ function Contact() {
         <Row className="justify-content-center">
           <Col md={8}>
             <div className="shadow-lg p-5 bg-light animate__animated animate__fadeInUp">
-              <h2 className="text-center mb-4 text-dark"><><i className="bi bi-person-lines-fill"></i></>Get in Touch</h2>
+              <h2 className="text-center mb-4 text-dark">Connect With Us</h2>
 
               {formSubmitted ? (
                 <div className="text-center">
@@ -59,29 +59,28 @@ function Contact() {
               ) : (
                 <Form onSubmit={handleSubmit}>
                   <Form.Group controlId="name" className="mb-3">
-                    <Form.Label><><i className="bi bi-person-check"></i></></Form.Label>
+                    <Form.Label><i className="bi bi-person-check me-2"></i>Your Name</Form.Label>
                     <Form.Control type="text" placeholder="Your Name" name="name" required />
                   </Form.Group>
 
                   <Form.Group controlId="email" className="mb-3">
-                    <Form.Label><><i className="bi bi-mailbox2-flag"></i></></Form.Label>
+                    <Form.Label><i className="bi bi-mailbox2-flag me-2"></i>Your Email</Form.Label>
                     <Form.Control type="email" placeholder="Your Email" name="email" required />
                   </Form.Group>
 
                   <Form.Group controlId="subject" className="mb-3">
-                    <Form.Label><><i className="bi bi-substack"></i></></Form.Label>
+                    <Form.Label><i className="bi bi-substack me-2"></i>Subject</Form.Label>
                     <Form.Control type="text" placeholder="Subject" name="subject" required />
                   </Form.Group>
 
                   <Form.Group controlId="message" className="mb-4">
-                    <Form.Label><><i className="bi bi-chat-square-text-fill"></i></></Form.Label>
+                    <Form.Label><i className="bi bi-chat-square-text-fill me-2"></i>Message</Form.Label>
                     <Form.Control as="textarea" rows={5} placeholder="Write your message here..." name="message" required />
                   </Form.Group>
 
                   {errorMessage && <div className="text-danger text-center mb-3">{errorMessage}</div>}
 
-                  <Button variant="primary" type="submit" className="w-100">
-                    <><i className="bi bi-check-circle-fill"></i></>
+                  <Button variant="primary" type="submit" className="w-100">Submit
                   </Button>
                 </Form>
               )}

@@ -43,7 +43,7 @@ function AboutPage() {
         </Row>
       </Container>
 
-      {/* Stylish Team Section for Publication Website 
+      {/* Stylish Team Section for Publication Website */}
       <Container className="my-5 ">
         <h2 className="text-center mb-4 shadow-sm hover-effect">Meet Our Mangement Team</h2>
         <Row className="d-flex justify-content-center">
@@ -117,7 +117,7 @@ function AboutPage() {
             </Card>
           </Col>
         </Row>
-      </Container>*/}
+      </Container>
 
       {/* Call to Action Section with Slide Animation */}
       <Container fluid className="bg-primary text-light py-5 text-center">

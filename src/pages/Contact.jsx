@@ -8,6 +8,7 @@ import axios from "axios";
 function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  console.log(errorMessage)
 
   const handleSubmit = async (e) => {
     e.preventDefault();

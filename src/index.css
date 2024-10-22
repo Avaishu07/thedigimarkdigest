@@ -47,4 +47,8 @@ body.light-mode {
     transition: box-shadow 0.3s ease-in-out;
   }
   
+  .footer_bg{
+    background-color: #0B192C;
+    color: white;
+  }
   

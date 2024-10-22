@@ -7,6 +7,7 @@ import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Import Ic
 import about1 from "../assets/about1.avif"
 
 function AboutPage() {
+  
   return (
     <div>
 

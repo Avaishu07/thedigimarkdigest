@@ -4,25 +4,36 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is imported
 import "animate.css/animate.min.css"; // Import Animate.css
 import { FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'; // Import Icons
+import about1 from "../assets/about1.avif"
 
 function AboutPage() {
   return (
     <div>
-   
+
 
       {/* Upper Section with Background Color */}
-      <Container fluid className="bg-info py-5 text-center text-light">
-        <h1 className="display-4 animate__animated animate__fadeIn">About Us</h1>
+      <Container  className=" py-5 text-center ">
+        <h1 className="">About Us</h1>
         <p className="lead animate__animated animate__fadeInUp animate__delay-1s">
           Welcome to The Digital Digest, where we bring you the finest literary works, articles, and features from across the globe. We are committed to excellence in publishing, providing insightful, thought-provoking content for our readers.
         </p>
-        <Link to="/subscribe">
-          <Button variant="light" className="animate__animated animate__bounceIn">
-            Subscribe to Our Magazine
-          </Button>
-        </Link>
+ 
       </Container>
 
+
+      <Container>
+        <Row>
+          <Col>
+            <div className="my-2">
+              <h4 className="my-2">Koinet Media is a unique demand generation agency. With the expertise of our skilled team, we...</h4>
+              <p >Koinet Media stands out as a demand generation agency unlike any other. We consistently deliver precise data, engaged contacts, and qualified prospects to our clients. As a leading agency, Koinet Media helps clients enhance their in-house demand generation efforts, including account-based marketing (ABM), by partnering with us to create robust sales pipelines. We specialize in content syndication and utilize seasoned solution consultants to nurture, connect, and qualify prospects—all based on performance. Our unique methodology combines a deep understanding of each client’s offerings, supported by our proprietary e-learning system. Over the years, Koinet Media has aided countless business professionals in selecting optimal technology solutions. We provide insights on a wide range of cutting-edge IT topics, including cloud computing, data management, cybersecurity, unified communications, collaboration, networking, and more. Additionally, our solution consultants leverage their experience to offer personalized recommendations to technology decision-makers through one-on-one engagement.</p>
+            </div>
+          </Col>
+          <Col>
+            <img src={about1} alt="" className="img-fluid mt-5" /></Col>
+        </Row>
+      </Container>
+      <hr />
       {/* Mission & Vision Section with Colored Backgrounds */}
       <Container className="mt-5">
         <Row className="d-flex justify-content-center gap-5">
@@ -49,7 +60,7 @@ function AboutPage() {
         <Row className="d-flex justify-content-center">
           <Col md={4} className="mb-4 animate__animated animate__zoomIn">
             <Card className="border-0 shadow-sm team-card h-100">
-              <Card.Img variant="top" src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" className="rounded-circle mx-auto mt-3" style={{ width: '150px' }} />
+              <Card.Img variant="top" src="https://media-bom2-2.cdn.whatsapp.net/v/t61.24694-24/463624618_1067841835341744_7446503408272207092_n.jpg?ccb=11-4&oh=01_Q5AaIC62uBkfKIaQJNBnp-sWI1ezqJpQwB2G22bLfQl07mSE&oe=67247EFC&_nc_sid=5e03e0&_nc_cat=105" className="rounded-circle mx-auto mt-3" style={{ width: '150px' }} />
               <Card.Body className="text-center">
                 <Card.Title>Bharat Pawar</Card.Title>
                 <Card.Text className="text-muted">

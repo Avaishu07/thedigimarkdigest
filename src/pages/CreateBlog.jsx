@@ -15,7 +15,7 @@ const CreateBlog = () => {
     useEffect(() => {
         // Fetch total blogs on component mount
         const fetchTotalBlogs = async () => {
-            const apiUrl = 'https://koinetwebbackend.onrender.com/api/getblogs';
+            const apiUrl = 'http://localhost:3000/api/getnewspost';
             try {
                 const response = await fetch(apiUrl);
                 const data = await response.json();
@@ -34,7 +34,7 @@ const CreateBlog = () => {
         const postData = { title, category, imageUrl, content };
 
         try {
-            const response = await fetch('https://koinetwebbackend.onrender.com/api/addblog', {
+            const response = await fetch('http://localhost:3000/api/addnews', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -78,15 +78,13 @@ const CreateBlog = () => {
                             <h5 className="card-title">Total News</h5>
                             <p id="total-blogs" className="card-text fs-1 fw-bold">{totalBlogs}</p>
                             {/* Updated link to home page */}
-                            <a href="../index.html" className="btn btn-primary">View All News</a>
+                            {/* <a href="../index.html" className="btn btn-primary">View All News</a> */}
                             {/* If using React Router, use the following line instead: */}
                             {/* <Link to="/" className="btn btn-primary">View All News</Link> */}
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 text-center">
-                    <a className="btn btn-danger btn-lg rounded-5" href="../newblogpostadd/addblog.html">Add News +</a>
-                </div>
+               
             </div>
             <div className="container mt-4">
                 <div className="row">
@@ -100,7 +98,7 @@ const CreateBlog = () => {
                                     id="title"
                                     value={title}
                                     onChange={(e) => setTitle(e.target.value)}
-                                    required
+                                    
                                 />
                             </div>
                             <div className="form-group my-3">
@@ -110,7 +108,7 @@ const CreateBlog = () => {
                                     id="category"
                                     value={category}
                                     onChange={(e) => setCategory(e.target.value)}
-                                    required
+                                    
                                 >
                                     <option value="">Select Category</option>
                                     <option value="AI/ML">AI/ML</option>
@@ -141,7 +139,7 @@ const CreateBlog = () => {
                                     id="imageUrl"
                                     value={imageUrl}
                                     onChange={(e) => setImageUrl(e.target.value)}
-                                    required
+                                    
                                 />
                             </div>
                             <Editor
